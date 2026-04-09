@@ -26,6 +26,34 @@ public class Ordine {
         this.costoCoperto = costoCoperto;
     }
 
+    public int getNumeroOrdine() {
+        return numeroOrdine;
+    }
+
+    public Tavolo getTavolo() {
+        return tavolo;
+    }
+
+    public List<MenuItem> getItems() {
+        return items;
+    }
+
+    public StatoOrdine getStatoOrdine() {
+        return statoOrdine;
+    }
+
+    public int getCoperti() {
+        return coperti;
+    }
+
+    public LocalTime getOraAcquisizione() {
+        return oraAcquisizione;
+    }
+
+    public double getCostoCoperto() {
+        return costoCoperto;
+    }
+
     public double getTotale() {
         double totaleItems = items.stream()
                 .mapToDouble(MenuItem::getPrice)
